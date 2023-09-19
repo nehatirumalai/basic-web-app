@@ -52,4 +52,9 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 71 multiplied by 59?")).toEqual("4189");
     });
 
+    test('should find all prime numbers', () => {
+        expect(QueryProcessor("Which of the following numbers are primes: 38, 99, 59, 62, 55?")).toEqual(['59']);
+        expect(QueryProcessor("Which of the following numbers are primes: 2, 53, 19, 30, 48?")).toEqual(['2','19','53']);
+    });
+
 });
