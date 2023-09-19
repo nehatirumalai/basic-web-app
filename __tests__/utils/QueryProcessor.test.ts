@@ -42,4 +42,14 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 11 plus 24?")).toEqual("35");
         expect(QueryProcessor("What is 55 plus 76?")).toEqual("131");
     });
+
+    test('should multiply numbers', () => {
+        expect(QueryProcessor("What is 26 multiplied by 97?")).toEqual("2522");
+        expect(QueryProcessor("What is 6 multiplied by 65?")).toEqual("390");
+        expect(QueryProcessor("What is 53 multiplied by 60?")).toEqual("3180");
+        expect(QueryProcessor("What is 20 multiplied by 4?")).toEqual("80");
+        expect(QueryProcessor("What is 81 multiplied by 54?")).toEqual("4274");
+        expect(QueryProcessor("What is 71 multiplied by 59?")).toEqual("4189");
+    });
+
 });
