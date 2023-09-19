@@ -33,4 +33,13 @@ describe("QueryProcessor", () => {
             "ntirumal"
           ));
     });
+
+    test('should add numbers', () => {
+        expect(QueryProcessor("What is 19 plus 7?")).toEqual("26");
+        expect(QueryProcessor("What is 62 plus 17?")).toEqual("79");
+        expect(QueryProcessor("What is 24 plus 19?")).toEqual("43");
+        expect(QueryProcessor("What is 20 plus 4?")).toEqual("24");
+        expect(QueryProcessor("What is 11 plus 24?")).toEqual("35");
+        expect(QueryProcessor("What is 55 plus 76?")).toEqual("131");
+    });
 });
